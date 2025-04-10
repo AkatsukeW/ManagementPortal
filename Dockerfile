@@ -1,4 +1,5 @@
 # Build stage
+ARG BUILDPLATFORM
 FROM --platform=$BUILDPLATFORM eclipse-temurin:17-jdk as builder
 
 # Install NodeJS and Yarn
